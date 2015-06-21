@@ -19,6 +19,7 @@
 		6390B88A1B3655D500F83DB2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6390B8721B3655D500F83DB2 /* UIKit.framework */; };
 		6390B8921B3655D500F83DB2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6390B8901B3655D500F83DB2 /* InfoPlist.strings */; };
 		6390B8941B3655D500F83DB2 /* HomepwnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6390B8931B3655D500F83DB2 /* HomepwnerTests.m */; };
+		6390B89F1B36562700F83DB2 /* DEIItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6390B89E1B36562700F83DB2 /* DEIItemsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		6390B88F1B3655D500F83DB2 /* HomepwnerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HomepwnerTests-Info.plist"; sourceTree = "<group>"; };
 		6390B8911B3655D500F83DB2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6390B8931B3655D500F83DB2 /* HomepwnerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomepwnerTests.m; sourceTree = "<group>"; };
+		6390B89D1B36562700F83DB2 /* DEIItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEIItemsViewController.h; sourceTree = "<group>"; };
+		6390B89E1B36562700F83DB2 /* DEIItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEIItemsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 		6390B8621B3655D400F83DB2 = {
 			isa = PBXGroup;
 			children = (
+				6390B89D1B36562700F83DB2 /* DEIItemsViewController.h */,
+				6390B89E1B36562700F83DB2 /* DEIItemsViewController.m */,
 				6390B8741B3655D500F83DB2 /* Homepwner */,
 				6390B88D1B3655D500F83DB2 /* HomepwnerTests */,
 				6390B86D1B3655D500F83DB2 /* Frameworks */,
@@ -241,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6390B87B1B3655D500F83DB2 /* main.m in Sources */,
+				6390B89F1B36562700F83DB2 /* DEIItemsViewController.m in Sources */,
 				6390B87F1B3655D500F83DB2 /* DEIAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
