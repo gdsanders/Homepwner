@@ -7,6 +7,7 @@
 //
 
 #import "DEIAppDelegate.h"
+#import "DEIItemsViewController.h"
 
 @implementation DEIAppDelegate
 
@@ -14,6 +15,14 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    // Create a DEIItemsViewController
+    DEIItemsViewController *itemsViewController = [[DEIItemsViewController alloc] init];
+    
+    // Place DEIItemsViewController's table view i the window hierarchy
+    self.window.rootViewController = itemsViewController;
+    
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

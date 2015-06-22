@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6342AC621B38AF820059D925 /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6342AC611B38AF820059D925 /* BNRItem.m */; };
+		6342AC651B38BFF40059D925 /* DEIItemsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6342AC641B38BFF40059D925 /* DEIItemsStore.m */; };
 		6390B86F1B3655D500F83DB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6390B86E1B3655D500F83DB2 /* Foundation.framework */; };
 		6390B8711B3655D500F83DB2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6390B8701B3655D500F83DB2 /* CoreGraphics.framework */; };
 		6390B8731B3655D500F83DB2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6390B8721B3655D500F83DB2 /* UIKit.framework */; };
@@ -33,6 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6342AC601B38AF820059D925 /* BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItem.h; sourceTree = "<group>"; };
+		6342AC611B38AF820059D925 /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
+		6342AC631B38BFF40059D925 /* DEIItemsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEIItemsStore.h; sourceTree = "<group>"; };
+		6342AC641B38BFF40059D925 /* DEIItemsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEIItemsStore.m; sourceTree = "<group>"; };
 		6390B86B1B3655D500F83DB2 /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6390B86E1B3655D500F83DB2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6390B8701B3655D500F83DB2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,6 +92,10 @@
 				6390B88D1B3655D500F83DB2 /* HomepwnerTests */,
 				6390B86D1B3655D500F83DB2 /* Frameworks */,
 				6390B86C1B3655D500F83DB2 /* Products */,
+				6342AC601B38AF820059D925 /* BNRItem.h */,
+				6342AC611B38AF820059D925 /* BNRItem.m */,
+				6342AC631B38BFF40059D925 /* DEIItemsStore.h */,
+				6342AC641B38BFF40059D925 /* DEIItemsStore.m */,
 			);
 			sourceTree = "<group>";
 		};
@@ -246,8 +256,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6390B87B1B3655D500F83DB2 /* main.m in Sources */,
+				6342AC621B38AF820059D925 /* BNRItem.m in Sources */,
 				6390B89F1B36562700F83DB2 /* DEIItemsViewController.m in Sources */,
 				6390B87F1B3655D500F83DB2 /* DEIAppDelegate.m in Sources */,
+				6342AC651B38BFF40059D925 /* DEIItemsStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +456,7 @@
 				6390B8991B3655D500F83DB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6390B89A1B3655D500F83DB2 /* Build configuration list for PBXNativeTarget "HomepwnerTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +465,7 @@
 				6390B89C1B3655D500F83DB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
