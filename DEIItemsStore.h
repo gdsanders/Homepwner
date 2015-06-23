@@ -8,8 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@class DEIItem;
+
 @interface DEIItemsStore : NSObject
 
+@property (nonatomic, readonly, copy) NSArray *allItems;
+
 + (instancetype)shareStore;
+
 
 @end

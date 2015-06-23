@@ -7,6 +7,7 @@
 //
 
 #import "DEIItemsStore.h"
+#import "BNRItem.h"
 
 @implementation DEIItemsStore
 
@@ -32,10 +33,9 @@
 - (instancetype)initPrivate
 {
     self = [super init];
-    
+   
     return self;
 }
-
 
 
 @end
