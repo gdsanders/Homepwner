@@ -9,6 +9,12 @@
 #import "DEIItemsStore.h"
 #import "BNRItem.h"
 
+@interface DEIItemsStore ()
+
+@property (nonatomic) NSMutableArray *privateItems;
+
+@end
+
 @implementation DEIItemsStore
 
 + (instancetype)shareStore
@@ -22,6 +28,7 @@
     return sharedStore;
 }
 
+// If someone calls init, let them know the error
 - (instancetype)init
 {
     [NSException raise:@"Singleton" format:@"Use +[DEIItemStore sharedStore]"];
@@ -30,12 +37,30 @@
 
 }
 
+// Real initializer
 - (instancetype)initPrivate
 {
     self = [super init];
+    if (self) {
+        _privateItems = [[NSMutableArray alloc] init];
+    }
+    
    
     return self;
 }
 
+- (NSArray *)allItems
+{
+    return [self.privateItems copy];
+}
+
+- (BNRItem *)createItem
+{
+    BNRItem *item = [BNRItem randomItem];
+    
+    [self.privateItems addObject:item];
+    
+    return item;
+}
 
 @end
