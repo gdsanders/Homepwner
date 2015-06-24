@@ -19,7 +19,7 @@
     // Create a DEIItemsViewController
     DEIItemsViewController *itemsViewController = [[DEIItemsViewController alloc] init];
     
-    // Place DEIItemsViewController's table view i the window hierarchy
+    // Place DEIItemsViewController's table view in the window hierarchy
     self.window.rootViewController = itemsViewController;
     
     
