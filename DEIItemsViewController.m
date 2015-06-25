@@ -22,6 +22,7 @@
 {
     // Call the superclass's designated initializer
     self = [super initWithStyle:UITableViewStylePlain];
+    
     if (self) {
         for (int i =0; i < 5; i++) {
             [[DEIItemsStore shareStore] createItem];
@@ -71,19 +72,32 @@
 
 - (IBAction)addNewItem:(id)sender
 {
+    // Create a new BNRItem and add it to the datastore
+    BNRItem *newItem = [[DEIItemsStore shareStore] createItem];
+    
+    // Figure out where that item is in the array
+    
+    NSInteger lastRow = [[[DEIItemsStore shareStore] allItems] indexOfObject:newItem];
+    
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:lastRow inSection:0];
+    
+    // Insert this new row into the table
+    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationTop];
+    
     
 }
 
 - (IBAction)toggleEditingMode:(id)sender
 {
-    // IF you are currently in editing mode...
+    // If you are currently in editing mode...
     if (self.isEditing) {
         // Change the text of button to inform user of state
         [sender setTitle:@"Edit" forState:UIControlStateNormal];
         
         // Turn off editing mode
         [self setEditing:NO animated:YES];
-        
+    } else {
+    
         // Change text of button to inform user of state change
         [sender setTitle:@"Done" forState:UIControlStateNormal];
         
