@@ -24,9 +24,7 @@
     self = [super initWithStyle:UITableViewStylePlain];
     
     if (self) {
-        for (int i =0; i < 5; i++) {
-            [[DEIItemsStore shareStore] createItem];
-        }
+        
     }
     
     
@@ -103,6 +101,19 @@
         
         // Enter editing mode
         [self setEditing:YES animated:YES];
+    }
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // If a table view is asking to commit a delete command...
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        NSArray *items = [[DEIItemsStore shareStore] allItems];
+        BNRItem *item = items[indexPath.row];
+        [[DEIItemsStore shareStore] removeItem:item];
+        
+        // Also remove that row from the table view with an animation
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
 }
 
