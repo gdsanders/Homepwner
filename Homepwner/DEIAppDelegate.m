@@ -19,8 +19,11 @@
     // Create a DEIItemsViewController
     DEIItemsViewController *itemsViewController = [[DEIItemsViewController alloc] init];
     
-    // Place DEIItemsViewController's table view in the window hierarchy
-    self.window.rootViewController = itemsViewController;
+    // Create an instance of a UINavigationController. It's stack only contains itemsViewController
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:itemsViewController];
+    
+    // Place the navigation controller's view in the window hierarchy
+    self.window.rootViewController = navController;
     
     
     self.window.backgroundColor = [UIColor whiteColor];
