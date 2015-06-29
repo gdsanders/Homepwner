@@ -10,6 +10,7 @@
 		6342AC621B38AF820059D925 /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6342AC611B38AF820059D925 /* BNRItem.m */; };
 		6342AC651B38BFF40059D925 /* DEIItemsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6342AC641B38BFF40059D925 /* DEIItemsStore.m */; };
 		6342AC671B3A84B70059D925 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6342AC661B3A84B70059D925 /* HeaderView.xib */; };
+		6342AC6A1B42064E0059D925 /* DEIDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6342AC691B42064E0059D925 /* DEIDetailViewController.m */; };
 		6390B86F1B3655D500F83DB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6390B86E1B3655D500F83DB2 /* Foundation.framework */; };
 		6390B8711B3655D500F83DB2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6390B8701B3655D500F83DB2 /* CoreGraphics.framework */; };
 		6390B8731B3655D500F83DB2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6390B8721B3655D500F83DB2 /* UIKit.framework */; };
@@ -41,6 +42,8 @@
 		6342AC631B38BFF40059D925 /* DEIItemsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEIItemsStore.h; sourceTree = "<group>"; };
 		6342AC641B38BFF40059D925 /* DEIItemsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEIItemsStore.m; sourceTree = "<group>"; };
 		6342AC661B3A84B70059D925 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		6342AC681B42064E0059D925 /* DEIDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEIDetailViewController.h; sourceTree = "<group>"; };
+		6342AC691B42064E0059D925 /* DEIDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEIDetailViewController.m; sourceTree = "<group>"; };
 		6390B86B1B3655D500F83DB2 /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6390B86E1B3655D500F83DB2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6390B8701B3655D500F83DB2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -127,6 +130,8 @@
 			children = (
 				6390B87D1B3655D500F83DB2 /* DEIAppDelegate.h */,
 				6390B87E1B3655D500F83DB2 /* DEIAppDelegate.m */,
+				6342AC681B42064E0059D925 /* DEIDetailViewController.h */,
+				6342AC691B42064E0059D925 /* DEIDetailViewController.m */,
 				6390B8801B3655D500F83DB2 /* Images.xcassets */,
 				6390B8751B3655D500F83DB2 /* Supporting Files */,
 			);
@@ -263,6 +268,7 @@
 				6342AC621B38AF820059D925 /* BNRItem.m in Sources */,
 				6390B89F1B36562700F83DB2 /* DEIItemsViewController.m in Sources */,
 				6390B87F1B3655D500F83DB2 /* DEIAppDelegate.m in Sources */,
+				6342AC6A1B42064E0059D925 /* DEIDetailViewController.m in Sources */,
 				6342AC651B38BFF40059D925 /* DEIItemsStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
