@@ -7,6 +7,7 @@
 //
 
 #import "DEIItemsViewController.h"
+#import "DEIDetailViewController.h"
 #import "DEIItemsStore.h"
 #import "BNRItem.h"
 
@@ -17,6 +18,14 @@
 @end
 
 @implementation DEIItemsViewController
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    DEIDetailViewController *detailViewController = [[DEIDetailViewController alloc] init];
+    
+    // Push it onto the top of the navigation controller's stack
+    [self.navigationController pushViewController:detailViewController animated:YES];
+}
 
 - (instancetype)init
 {
