@@ -23,6 +23,13 @@
 {
     DEIDetailViewController *detailViewController = [[DEIDetailViewController alloc] init];
     
+    NSArray *items = [[DEIItemsStore shareStore] allItems];
+    
+    BNRItem *selectedItem = items[indexPath.row];
+    
+    // Give detail view controller a pointed ot the item object in row
+    detailViewController.item = selectedItem;
+    
     // Push it onto the top of the navigation controller's stack
     [self.navigationController pushViewController:detailViewController animated:YES];
 }
@@ -144,6 +151,13 @@
     }
     
     return _headerView;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self.tableView reloadData];
 }
 
 
