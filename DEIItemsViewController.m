@@ -40,6 +40,8 @@
     self = [super initWithStyle:UITableViewStylePlain];
     
     if (self) {
+        UINavigationItem *navItem = self.navigationItem;
+        navItem.title = @"Homepwner";
         
     }
     
