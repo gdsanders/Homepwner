@@ -43,6 +43,11 @@
         UINavigationItem *navItem = self.navigationItem;
         navItem.title = @"Homepwner";
         
+        // Create a new bar button item that will send addItem: to DEIItemsViewController
+        UIBarButtonItem *bbi = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNewItem:)];
+        // Set this bar button item as the right item in the NavigationItem
+        navItem.rightBarButtonItem = bbi;
+        
     }
     
     
