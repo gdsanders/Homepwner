@@ -20,6 +20,9 @@
 
 @implementation DEIDetailViewController
 
+- (IBAction)takePicture:(id)sender {
+}
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
