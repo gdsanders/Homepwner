@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DEIDetailViewController">
             <connections>
                 <outlet property="dateLabel" destination="O7P-3c-00r" id="DBH-6T-zni"/>
+                <outlet property="imageView" destination="3k5-go-xge" id="lbM-G0-lSv"/>
                 <outlet property="nameField" destination="e2t-gT-XtW" id="rTg-Rg-crV"/>
                 <outlet property="serialNumberField" destination="jdB-fP-bS0" id="IF9-A3-N0Y"/>
                 <outlet property="valueField" destination="aTb-Te-RQW" id="mTx-AB-n6c"/>
@@ -70,6 +71,10 @@
                         <outlet property="delegate" destination="-1" id="tnp-Uf-Pbd"/>
                     </connections>
                 </textField>
+                <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3k5-go-xge">
+                    <rect key="frame" x="40" y="305" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
