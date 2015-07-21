@@ -22,6 +22,15 @@
 @implementation DEIDetailViewController
 
 - (IBAction)takePicture:(id)sender {
+    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+    
+    // If device has a camera, take a picture, otherwise, just pick from photo library
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    }
+    else {
+        imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated
