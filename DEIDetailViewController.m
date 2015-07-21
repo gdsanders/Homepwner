@@ -10,6 +10,8 @@
 #import "BNRItem.h"
 
 @interface DEIDetailViewController ()
+<UINavigationBarDelegate, UIImagePickerControllerDelegate>
+
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 @property (weak, nonatomic) IBOutlet UITextField *serialNumberField;
 @property (weak, nonatomic) IBOutlet UITextField *valueField;
@@ -31,6 +33,7 @@
     else {
         imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     }
+    imagePicker.delegate = self;
 }
 
 - (void)viewWillAppear:(BOOL)animated
