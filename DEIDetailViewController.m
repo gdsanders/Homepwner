@@ -34,6 +34,9 @@
         imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     }
     imagePicker.delegate = self;
+    
+    // Ploace image picker on the screen
+    [self presentViewController:imagePicker animated:YES completion:NULL];
 }
 
 - (void)viewWillAppear:(BOOL)animated
