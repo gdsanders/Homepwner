@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6340FD8F1B605CAD008985B2 /* DEIImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6340FD8E1B605CAD008985B2 /* DEIImageStore.m */; };
 		6342AC621B38AF820059D925 /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6342AC611B38AF820059D925 /* BNRItem.m */; };
 		6342AC651B38BFF40059D925 /* DEIItemsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6342AC641B38BFF40059D925 /* DEIItemsStore.m */; };
 		6390B86F1B3655D500F83DB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6390B86E1B3655D500F83DB2 /* Foundation.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6340FD8D1B605CAD008985B2 /* DEIImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEIImageStore.h; sourceTree = "<group>"; };
+		6340FD8E1B605CAD008985B2 /* DEIImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEIImageStore.m; sourceTree = "<group>"; };
 		6342AC601B38AF820059D925 /* BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItem.h; sourceTree = "<group>"; };
 		6342AC611B38AF820059D925 /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
 		6342AC631B38BFF40059D925 /* DEIItemsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEIItemsStore.h; sourceTree = "<group>"; };
@@ -93,6 +96,8 @@
 			children = (
 				63C8B6B11B4B834400C92E69 /* DEIDetailViewController.h */,
 				63C8B6B21B4B834400C92E69 /* DEIDetailViewController.m */,
+				6340FD8D1B605CAD008985B2 /* DEIImageStore.h */,
+				6340FD8E1B605CAD008985B2 /* DEIImageStore.m */,
 				63C8B6B31B4B834400C92E69 /* DEIDetailViewController.xib */,
 				6390B89D1B36562700F83DB2 /* DEIItemsViewController.h */,
 				6390B89E1B36562700F83DB2 /* DEIItemsViewController.m */,
@@ -267,6 +272,7 @@
 				6390B87B1B3655D500F83DB2 /* main.m in Sources */,
 				6342AC621B38AF820059D925 /* BNRItem.m in Sources */,
 				6390B89F1B36562700F83DB2 /* DEIItemsViewController.m in Sources */,
+				6340FD8F1B605CAD008985B2 /* DEIImageStore.m in Sources */,
 				6390B87F1B3655D500F83DB2 /* DEIAppDelegate.m in Sources */,
 				63C8B6B41B4B834400C92E69 /* DEIDetailViewController.m in Sources */,
 				6342AC651B38BFF40059D925 /* DEIItemsStore.m in Sources */,
