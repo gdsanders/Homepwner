@@ -8,6 +8,7 @@
 
 #import "DEIDetailViewController.h"
 #import "BNRItem.h"
+#import "DEIImageStore.h"
 
 @interface DEIDetailViewController ()
 <UINavigationBarDelegate, UIImagePickerControllerDelegate>
