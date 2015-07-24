@@ -8,6 +8,7 @@
 
 #import "DEIItemsStore.h"
 #import "BNRItem.h"
+#import "DEIImageStore.h"
 
 @interface DEIItemsStore ()
 
@@ -65,6 +66,11 @@
 
 - (void)removeItem:(BNRItem *)item
 {
+    NSString *key = item.itemKey;
+    
+    [[DEIImageStore sharedStore] deleteImageForKey:key];
+    
+    
     [self.privateItems removeObjectIdenticalTo:item];
 }
 

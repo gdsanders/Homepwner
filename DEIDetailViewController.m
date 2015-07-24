@@ -45,6 +45,9 @@
     // Get the picked image from info directory
     UIImage *image = info[UIImagePickerControllerOriginalImage];
     
+    // Store the image in the DEIImageStore for this key
+    [[DEIImageStore sharedStore] setImage:image forKey:self.item.itemKey];
+    
     // Put that image onto the screen in our image view
     self.imageView.image = image;
     
