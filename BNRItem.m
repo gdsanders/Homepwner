@@ -56,7 +56,7 @@
 + (instancetype)randomItem
 {
     // Create an immutable array of three adjectives
-    NSArray *randomAdjectiveList = @[@"Bear Bryant", @"Barry Switzer", @"Nick Saban"];
+    NSArray *randomAdjectiveList = @[@"Bear Bryant", @"Lou Holtz", @"Nick Saban"];
     
     // Create a mutable array of three nouns
     NSArray *randomNounList = @[@"Tiger", @"Grizzly", @"Black Mamba"];
